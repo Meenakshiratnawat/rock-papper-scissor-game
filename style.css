@@ -13,15 +13,13 @@
 .Header{
     display: flex; 
     flex-direction: row;
-    margin: 0.5rem;
     border: 1.5px solid white;
-    margin-top: 2.5rem;
-    width: 42%;
+    margin-top: 3.5rem;
+    width: 40%;
     height: 127px;
     text-align: center;
-    margin-left: 25rem;
+    margin-left: 429px;
     border-radius: 13px ;
-  
 }
 
 .Header> .list{
@@ -33,21 +31,19 @@ text-align: left;
 color: white;
 list-style: none;
 margin-top: 0.5rem;
-margin-left: -1rem;
+/* margin-left: -1rem; */
+
 }
 
-
- .userScoreBox , .computerScoreBox  {
+.Header> .userScoreBox , .computerScoreBox  {
     width: 100px;
     height: 95px;
     border: 1px solid white;
-    text-align: center;
     margin-top: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     background-color: white;
     border-radius: 9px;
     color: #656565;
-    
 
 }
 
@@ -59,8 +55,6 @@ margin-left: -1rem;
     font-size: 48px;
     font-weight: 700;
     line-height: 79.69px;
-    text-align: center;
-
 }
 
 
@@ -253,51 +247,67 @@ display: none;
     display: flex;
     text-align: center;
     color: white;
-margin-left: 25rem;
-margin-top: 6rem;
+margin-left: 24rem;
+margin-top: 9rem;
 display: none;
 
 }
+
 
 .js-player-move h1 {
     font-size: 24px;
     color: white;
     margin-bottom: 5rem;
+    margin-left: 1rem;
 }
 .js-computer-move h1 {
     font-size: 24px;
     color: white;
     margin-bottom: 5rem;
     margin-top:-14.5rem ;
+    margin-left: -5rem;
+
 }
+
 .js-computer-move{
-    margin-left: -47rem;
+    margin-left: -60rem;
 margin-top: -2rem;
 margin-right: 3rem;
-
+text-align: center;
+}
+.js-player-move{
+    margin-left: 9rem;
+margin-top: -2rem;
+margin-right: 3rem;
+text-align: center;
 }
 
+
 .js-result{
-    margin-left: 27rem;
+    margin-left: -28rem;
     margin-right: 2rem;
 margin-top: -6rem;
 font-size: 22px;
 font-family: 'Roboto';
+text-align: center;
+    text-align: center;
 
 }
 
 .play-again-button{
-    margin-left: 29rem;
+    margin-left: -26rem;
     margin-top: -4rem;
     border: 1px solid  white; 
     border-radius: 5px;
     width: 105px;
     height: 30px;
+    text-align: center;
 
 }
 .play-again{
     margin-right: 5rem;
     margin-top: -4rem;
+    text-align: center;
 
 }
 
@@ -314,40 +324,23 @@ font-family: 'Roboto';
 
 
 
-#moveboxPlayer{
+.player-move-img{
     background-color: white;
     border: 10px transparent; 
     border-radius: 60%; 
 height:122px ;
+text-align: center;
     width: 122px;
-    margin-left: 30rem;
-    /* display: none; */
-    /* box-shadow: 
-        10px 0 40px rgba(29, 168, 43, 0.79),
-        0 0 0 20px rgba(29, 168, 43, 0.79), 
-        10px 0 65px rgba(46, 154, 37, 0.39), 
-        0 0 0 40px rgba(46, 154, 37, 0.39), 
-        0 0 70px rgba(59, 103, 32, 3),
-        0 20px 60px rgba(59, 103, 32, 2);  */
-
+   
 }
 
-#moveboxComputer{
+.computer-move-img{
     background-color: white;
     border: 10px transparent; 
     border-radius: 60%; 
+    text-align: center;
 height:122px ;
     width: 122px;
-    margin-left: 50rem;
-    /* display: none; */
-    /* box-shadow:  
-        10px 0 40px rgba(29, 168, 43, 0.79),
-        0 0 0 20px rgba(29, 168, 43, 0.79), 
-        10px 0 65px rgba(46, 154, 37, 0.39), 
-        0 0 0 40px rgba(46, 154, 37, 0.39), 
-        0 0 70px rgba(59, 103, 32, 3),
-        0 20px 60px rgba(59, 103, 32, 2);  */
-
 }
 
 .winner-page{
@@ -360,7 +353,7 @@ height:122px ;
     border-radius: 5px;
     height: 30px;
     color: rgba(107, 107, 107, 1);
-    width:120px
+    width:120px   
 }
 
 .winner-page {

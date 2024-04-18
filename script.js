@@ -22,7 +22,8 @@ Array.from(buttons).forEach((button) => {
         const result = play(playerMove);
         document.querySelector('.ChooseMove').style.display = 'none';
         document.querySelector('.game-result').style.display = 'block';
-         saveScores()
+        saveScores();
+
       
     });
 });
@@ -70,7 +71,7 @@ function pickComputerMove() {
         } else if (playerMove === 'rock.svg') {
             if (computerMove === 'rock.svg') {
                 result = 'Tie';
-            } else if (computerMove === 'papper.svg') {
+            } else if (computerMove === 'paper.svg') {
                 result = 'You lost against Computer';
                 scores.computerWins++;
             } else {
@@ -101,18 +102,10 @@ function pickComputerMove() {
             moveImage.classList.add('no-transform');
         }
     
-        moveContainer.style.boxShadow = 'none';
-
-    if (isPlayerWinner)
-     {
-        moveContainer.style.boxShadow = `
-            10px 0 40px rgba(29, 168, 43, 0.79),
-            0 0 0 20px rgba(29, 168, 43, 0.79), 
-            10px 0 65px rgba(46, 154, 37, 0.39), 
-            0 0 0 40px rgba(46, 154, 37, 0.39), 
-            10px 0 70px rgba(59, 103, 32, 3),
-            0 20px 60px rgba(59, 103, 32, 2)`;
+    if (isPlayerWinner){
+        moveImage.classList.add (`winner`)
     }
+    
     }
     
     setMove(playerMove.replace('.svg', ''), 'playerMoveImage', result === 'You win against Computer');
