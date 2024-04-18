@@ -70,7 +70,7 @@ function pickComputerMove() {
         } else if (playerMove === 'rock.svg') {
             if (computerMove === 'rock.svg') {
                 result = 'Tie';
-            } else if (computerMove === 'paper.svg') {
+            } else if (computerMove === 'papper.svg') {
                 result = 'You lost against Computer';
                 scores.computerWins++;
             } else {
