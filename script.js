@@ -160,6 +160,7 @@ document.querySelector('.rules-button').addEventListener('click', () => {
 
   document.querySelector('.playAgain-button').addEventListener('click', () => {
     document.querySelector('.Header').style.display = 'block';
+    location.reload();
 
     document.querySelector('.ChooseMove').style.display = 'block';   
     document.querySelector('.winner-page').style.display = 'none';  
