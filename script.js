@@ -55,8 +55,8 @@ function pickComputerMove() {
                 document.querySelector('.next-button').style.display = 'block';
 
             }
-        } else if (playerMove === 'paper.svg') {
-            if (computerMove === 'paper.svg') {
+        } else if (playerMove === 'papper.svg') {
+            if (computerMove === 'papper.svg') {
                 result = 'Tie';
             } else if (computerMove === 'scissor.svg') {
                 result = 'You lost against Computer';
