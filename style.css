@@ -1,0 +1,368 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        font-family: 'Roboto', sans-serif; 
+        background: #8CC461;
+      }
+
+
+.Header{
+    display: flex; 
+    flex-direction: row;
+    margin: 0.5rem;
+    border: 1.5px solid white;
+    margin-top: 2.5rem;
+    width: 42%;
+    height: 127px;
+    text-align: center;
+    margin-left: 25rem;
+    border-radius: 13px ;
+  
+}
+
+.Header> .list{
+    margin-right: 12.5rem;
+    width:  135px;
+    font-family: 'Roboto';font-size: 29px;
+    font-weight: 170px;
+text-align: left;
+color: white;
+list-style: none;
+margin-top: 0.5rem;
+margin-left: -1rem;
+}
+
+
+ .userScoreBox , .computerScoreBox  {
+    width: 100px;
+    height: 95px;
+    border: 1px solid white;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 9px;
+    color: #656565;
+    
+
+}
+
+
+.userScoreBox h1 , .computerScoreBox h1 {
+    margin-top: -12px;
+    color: #252525;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 79.69px;
+    text-align: center;
+
+}
+
+
+.ChooseMove{
+    text-align: center;
+margin-top: 7rem; 
+
+}
+
+/* styling of  buttons */
+.scissor-button{
+    border: 11.7px solid #BD00FF; 
+    border-radius: 50%; 
+    padding: 15px; 
+}
+
+.papper-button {
+    border: 10px solid  #FFA943; 
+    border-radius: 50%; 
+    padding: 15px; 
+     transform: translateY(160%);
+    
+}
+.no-transform {
+    transform: none !important; /* Override any existing transform */
+}
+.rock-button{
+    border: 10px solid #0074B6 ; 
+    border-radius: 50%; 
+    padding: 15px;
+    z-index: 1; 
+    margin-right: 2rem;
+ 
+}
+/* assigning lines after buttons */
+.scissor-button::after {
+    content: '';
+    position: absolute;
+    width: 154px;
+    border-top: 12px solid #000000A3; 
+    transform: translateY(-15%) rotate(55deg); 
+    margin-left: -3rem;
+    opacity: 1;
+    margin-top: 9.5rem;
+
+
+ }
+
+.papper-button::after {
+    content: '';
+    position: absolute;
+    width: 114px;
+    border-top: 12px solid #000000A3;; 
+    transform: translateY(-10%) rotate(-59deg); 
+    opacity: 1; 
+    margin-top: -4rem;
+    margin-left: -1.4rem;
+
+}
+
+.rock-button::after {
+    content: '';
+    position: absolute;
+    width: 133.3px;
+    border-top: 12px solid #000000A3;; 
+    transform: translateX(50%) ; 
+    opacity: 1; 
+    margin-top: 1.6rem;
+    margin-left: -18.5rem;
+
+}
+
+
+
+.cancel-icon {
+    width: 33px;
+    height: 35px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1rem;
+    color: white;
+    z-index: 2;
+    margin-top: 1rem;
+    position: absolute; 
+    top: -30px; 
+    right: 1.4rem; 
+    display: none;
+
+}
+
+
+.rules-button{
+    background: #8CC461;
+    color: white;
+    padding: 7px;
+    border: 1px solid  white; 
+width: 95px;
+height: 30px;
+border-radius: 9px;
+margin-right: 1rem;
+}
+
+
+/* styling rules dialog box   */
+.rulesDialog-box{
+    border: 4px solid  white; 
+    border-radius: 10px;
+    list-style: none;
+    width: 240px;
+    height: 240px;
+    margin-left: -70rem;
+margin-bottom: 2rem;
+ background: #004429;
+ position: absolute;
+right: 3rem;
+color: white;
+z-index: 1;  
+display: none;
+
+}
+
+/* styling for rules list */
+ .rule-list {
+    font-family: 'Roboto';font-size: 11.4px;
+    list-style: none;
+    color: white;
+    font-weight: 400;
+    line-height: 1.5; 
+    margin-left: -0.3em; 
+    position: absolute;
+    text-align: left;
+    margin-top: -1rem;
+}
+
+/* adding rectangular bullets before rule list  */
+.rulesDialog-box > .rule-list li::before {
+    content: "\25A0"; 
+    display: inline-block;
+    margin-left: -2.4em; 
+    color: #FFD600;
+    vertical-align: middle; 
+    position: absolute;
+
+}
+
+
+.rulesDialog-box h1{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 21.4px;
+    margin-bottom: 26px;
+}
+
+
+.Rules-container {
+    position: absolute;
+    text-align: end;
+    top: 0;
+    right: 0;
+    margin-top: 22.9rem;
+margin-right: 1rem;
+
+}
+
+
+.footer-Button
+{
+display: flex;
+margin-top: 17rem; 
+margin-right: 1rem;
+
+}
+
+.next-button{
+    background: #8CC461;
+    color: white;
+    border: 1px solid  white; 
+width: 85px;
+height: 30px;
+border-radius: 9px;
+display: none;
+
+}
+
+
+.game-result{
+    display: flex;
+    text-align: center;
+    color: white;
+margin-left: 25rem;
+margin-top: 6rem;
+display: none;
+
+}
+
+.js-player-move h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5rem;
+}
+.js-computer-move h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5rem;
+    margin-top:-14.5rem ;
+}
+.js-computer-move{
+    margin-left: -47rem;
+margin-top: -2rem;
+margin-right: 3rem;
+
+}
+
+.js-result{
+    margin-left: 27rem;
+    margin-right: 2rem;
+margin-top: -6rem;
+font-size: 22px;
+font-family: 'Roboto';
+
+}
+
+.play-again-button{
+    margin-left: 29rem;
+    margin-top: -4rem;
+    border: 1px solid  white; 
+    border-radius: 5px;
+    width: 105px;
+    height: 30px;
+
+}
+.play-again{
+    margin-right: 5rem;
+    margin-top: -4rem;
+
+}
+
+/* shadow effect on the winner move */
+.winner {
+    box-shadow:   
+    10px 0 40px rgba(29, 168, 43, 0.79),
+    0 0 0 20px rgba(29, 168, 43, 0.79), 
+    10px 0 65px rgba(46, 154, 37, 0.39), 
+    0 0 0 40px rgba(46, 154, 37, 0.39), 
+    0 0 70px rgba(59, 103, 32, 3),
+    0 20px 60px rgba(59, 103, 32, 2); 
+}
+
+
+
+#moveboxPlayer{
+    background-color: white;
+    border: 10px transparent; 
+    border-radius: 60%; 
+height:122px ;
+    width: 122px;
+    margin-left: 30rem;
+    /* display: none; */
+    /* box-shadow: 
+        10px 0 40px rgba(29, 168, 43, 0.79),
+        0 0 0 20px rgba(29, 168, 43, 0.79), 
+        10px 0 65px rgba(46, 154, 37, 0.39), 
+        0 0 0 40px rgba(46, 154, 37, 0.39), 
+        0 0 70px rgba(59, 103, 32, 3),
+        0 20px 60px rgba(59, 103, 32, 2);  */
+
+}
+
+#moveboxComputer{
+    background-color: white;
+    border: 10px transparent; 
+    border-radius: 60%; 
+height:122px ;
+    width: 122px;
+    margin-left: 50rem;
+    /* display: none; */
+    /* box-shadow:  
+        10px 0 40px rgba(29, 168, 43, 0.79),
+        0 0 0 20px rgba(29, 168, 43, 0.79), 
+        10px 0 65px rgba(46, 154, 37, 0.39), 
+        0 0 0 40px rgba(46, 154, 37, 0.39), 
+        0 0 70px rgba(59, 103, 32, 3),
+        0 20px 60px rgba(59, 103, 32, 2);  */
+
+}
+
+.winner-page{
+    text-align: center;
+   margin-top: 13rem;
+   color: white;
+}
+.playAgain-button{
+    border: 1px solid  white; 
+    border-radius: 5px;
+    height: 30px;
+    color: rgba(107, 107, 107, 1);
+    width:120px
+}
+
+.winner-page {
+    display: none;
+  }
