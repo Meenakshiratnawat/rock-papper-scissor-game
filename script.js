@@ -11,6 +11,9 @@ let scores = {
 if (localStorage.getItem('scores')) {
     scores = JSON.parse(localStorage.getItem('scores'));
 }
+function saveScores() {
+    localStorage.setItem('scores', JSON.stringify(scores));
+}
 
 Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -19,7 +22,7 @@ Array.from(buttons).forEach((button) => {
         const result = play(playerMove);
         document.querySelector('.ChooseMove').style.display = 'none';
         document.querySelector('.game-result').style.display = 'block';
-
+         saveScores()
       
     });
 });
